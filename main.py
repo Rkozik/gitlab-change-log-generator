@@ -1,15 +1,19 @@
-from extractors.GitMergeExtractor import GitMergeLogExtractor
-from extractors.GitTagsExtractor import GitTagsLogExtractor
+from extractors.GitMergeExtractor import GitMergeExtractor
+from extractors.GitTagsExtractor import GitTagsExtractor
+from extractors.GitCommitExtractor import GitCommitExtractor
 
 
 def main():
-    merge_extractor = GitMergeLogExtractor("/Users/robertkozik/sites/php2/")
-    merge_extractor.execute()
-    merge_commits = merge_extractor.merge_commits
+    # merge_extractor = GitMergeExtractor("/Users/robertkozik/sites/php2/")
+    # merge_extractor.execute()
+    # merge_commits = merge_extractor.merge_commits
+    #
+    # tag_extractor = GitTagsExtractor("/Users/robertkozik/sites/php2/")
+    # tag_extractor.execute()
+    # tag_commits = tag_extractor.tag_commits
 
-    tag_extractor = GitTagsLogExtractor("/Users/robertkozik/sites/php2/")
-    tag_extractor.execute()
-    tag_commits = tag_extractor.tag_commits
+    commit_extractor = GitCommitExtractor("/Users/robertkozik/PycharmProjects/git-change-log-generator")
+    commit_extractor.execute()
 
 
 def find_valid_merge_commits(merge_commits: dict, tag_commits: dict):

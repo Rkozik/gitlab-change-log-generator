@@ -22,6 +22,8 @@ class Commit:
     def set_branch_name(self, project_directory: str):
         cmd = "cd " + project_directory + "; git name-rev --name-only " + self.hash
         output = subprocess.check_output(cmd, shell=True).decode("ISO-8859-1")
+        print(output, self.hash)
+        return
         is_branch_ref = re.search(r'((?<=remotes\/)|(?<=tags\/))([a-zA-Z0-9_\/]+)(?=)', output)
 
         if is_branch_ref is None:

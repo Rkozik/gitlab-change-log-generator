@@ -6,9 +6,3 @@ class IExtractor:
 
     @abstractmethod
     def execute(self): raise NotImplementedError
-
-    @abstractmethod
-    def save(self): raise NotImplementedError
-
-    @abstractmethod
-    def load(self): raise NotImplementedError
