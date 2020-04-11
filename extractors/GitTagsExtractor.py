@@ -6,7 +6,7 @@ import json
 import os.path
 
 
-class GitTagsLogExtractor(IExtractor):
+class GitTagsExtractor(IExtractor):
     def __init__(self, project_directory):
         self.project_directory = project_directory
         self.tag_commits = self.load()

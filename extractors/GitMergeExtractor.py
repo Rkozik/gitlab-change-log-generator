@@ -6,7 +6,7 @@ import json
 import os.path
 
 
-class GitMergeLogExtractor(IExtractor):
+class GitMergeExtractor(IExtractor):
     def __init__(self, project_directory):
         self.project_directory = project_directory
         self.merge_commits = self.load()
