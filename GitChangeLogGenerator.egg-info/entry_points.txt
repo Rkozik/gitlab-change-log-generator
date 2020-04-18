@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        git_change_log=GitChangeLogGenerator.main:test
+    
