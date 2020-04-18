@@ -19,18 +19,5 @@ def main(project_name):
     # TODO: Setup test cases for branch patterns
 
 
-
-@click.command()
-@click.option('--branch-pattern', '-b', multiple=True)
-def test(branch_pattern):
-    """
-    git_change_log -b ((?<=bugfix\/)[0-9]+)(.*) 1 bug_id -b ((?<=bugfix\/)[0-9]+)(.*) 2 bug_name
-
-    :param branch_pattern:
-    :return:
-    """
-    print(branch_pattern)
-
-
 if __name__ == "__main__":
     main()
