@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        gitlab_release=GitReleaseNotesGenerator.main:main
+    

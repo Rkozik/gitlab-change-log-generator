@@ -1,0 +1,25 @@
+## Release {{release_version}} ({{release_date}})
+
+### Features
+{{#features}}
+- {{#name}}{{.}}{{/name}} ({{project_url}}{{#id}}{{.}}){{/id}}
+{{/features}}
+{{^features}}
+- No new features
+{{/features}}
+
+### Bug Fixes
+{{#bug_fixes}}
+- {{#name}}{{.}}{{/name}} ({{project_url}}{{#id}}{{.}}){{/id}}
+{{/bug_fixes}}
+{{^bug_fixes}}
+- No bug fixes
+{{/bug_fixes}}
+
+### Hot Fixes
+{{#hot_fixes}}
+- {{#name}}{{.}}{{/name}} ({{project_url}}{{#id}}{{.}}){{/id}}
+{{/hot_fixes}}
+{{^hot_fixes}}
+- No hot fixes
+{{/hot_fixes}}
