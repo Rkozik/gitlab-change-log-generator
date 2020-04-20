@@ -10,7 +10,7 @@ def validate_tag_or_commit_hash(ctx, value):
             git_commit_cmd = "git cat-file -t " + value
             git_commit = Utils().get_cmd_output(git_commit_cmd)[0]
         except subprocess.CalledProcessError:
-            raise click.BadParameter("The tag or commit hash you entered doesn't exist.")
+            raise click.BadParameter("The <tag> or <commit hash> you entered doesn't exist.")
         return value
 
 
