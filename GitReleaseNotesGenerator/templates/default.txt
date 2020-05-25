@@ -2,7 +2,7 @@
 
 ### Features
 {{#features}}
-- {{#name}}{{.}}{{/name}} ({{project_url}}{{#id}}{{.}}){{/id}}
+- {{#name}}{{.}}{{/name}} ({{project_url}}/issues/{{#id}}{{.}}){{/id}}
 {{/features}}
 {{^features}}
 - No new features
@@ -10,7 +10,7 @@
 
 ### Bug Fixes
 {{#bug_fixes}}
-- {{#name}}{{.}}{{/name}} ({{project_url}}{{#id}}{{.}}){{/id}}
+- {{#name}}{{.}}{{/name}} ({{project_url}}/issues/{{#id}}{{.}}){{/id}}
 {{/bug_fixes}}
 {{^bug_fixes}}
 - No bug fixes
@@ -18,7 +18,7 @@
 
 ### Hot Fixes
 {{#hot_fixes}}
-- {{#name}}{{.}}{{/name}} ({{project_url}}{{#id}}{{.}}){{/id}}
+- {{#name}}{{.}}{{/name}} ({{project_url}}/issues/{{#id}}{{.}}){{/id}}
 {{/hot_fixes}}
 {{^hot_fixes}}
 - No hot fixes

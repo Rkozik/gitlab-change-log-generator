@@ -12,7 +12,7 @@ class Translator:
     @abstractmethod
     def translate(self):
         """
-        Preforms the pipes and filters necessary to translate a cmd output
+        Preforms filters necessary to translate a queue of messages
         :return:
         """
         pass
